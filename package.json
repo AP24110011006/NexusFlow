@@ -1,0 +1,23 @@
+{
+  "name": "nexusflow",
+  "version": "1.0.0",
+  "description": "NexusFlow - Visual IoT Telemetry & Rule Engine | Infotact Solutions Internship Project",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "iot",
+    "telemetry",
+    "rule-engine",
+    "react",
+    "nodejs",
+    "websockets"
+  ],
+  "author": "Koneti Manikanth (Infotact Solutions Associate L1. Intern)",
+  "license": "MIT"
+}
