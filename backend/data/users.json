@@ -1,0 +1,24 @@
+[
+  {
+    "id": "usr_manikanth",
+    "name": "Koneti Manikanth",
+    "email": "manikanth9878@gmail.com",
+    "role": "Associate L1. Intern",
+    "department": "Web Development",
+    "organization": "Infotact Solutions",
+    "phone": "+91 7989612028",
+    "refNo": "ITS/WEB/1849",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80",
+    "createdAt": "2026-11-10T09:00:00.000Z"
+  },
+  {
+    "id": "usr_admin",
+    "name": "Nexus Admin",
+    "email": "admin@nexusflow.io",
+    "role": "System Administrator",
+    "department": "Operations",
+    "organization": "Infotact Solutions",
+    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=256&q=80",
+    "createdAt": "2026-11-10T08:00:00.000Z"
+  }
+]

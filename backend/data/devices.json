@@ -1,0 +1,122 @@
+[
+  {
+    "id": "dev_001",
+    "deviceId": "SENSOR_001",
+    "name": "Assembly Line Climate Probe",
+    "type": "Environmental Sensor",
+    "location": "Factory Floor - Room 101",
+    "status": "warning",
+    "ipAddress": "192.168.1.101",
+    "macAddress": "00:1A:2B:3C:4D:01",
+    "firmware": "v2.4.1",
+    "battery": 88,
+    "reportingInterval": 3,
+    "lastReading": {
+      "temperature": 30.3,
+      "humidity": 44.3,
+      "pressure": 1014.6,
+      "battery": 88,
+      "timestamp": "2026-11-10T16:45:38.940Z"
+    },
+    "lastSeen": "2026-11-10T16:45:38.940Z",
+    "telemetryCount": 167,
+    "createdAt": "2026-11-10T08:30:00.000Z",
+    "updatedAt": "2026-11-10T16:45:38.943Z"
+  },
+  {
+    "id": "dev_002",
+    "deviceId": "SENSOR_002",
+    "name": "Server Room Climate Unit",
+    "type": "HVAC Monitor",
+    "location": "Data Center - Rack Bay B",
+    "status": "online",
+    "ipAddress": "192.168.1.102",
+    "macAddress": "00:1A:2B:3C:4D:02",
+    "firmware": "v2.4.1",
+    "battery": 98,
+    "reportingInterval": 3,
+    "lastReading": {
+      "temperature": 22.2,
+      "humidity": 39.4,
+      "pressure": 1015.5,
+      "battery": 98,
+      "timestamp": "2026-11-10T16:45:38.943Z"
+    },
+    "lastSeen": "2026-11-10T16:45:38.943Z",
+    "telemetryCount": 160,
+    "createdAt": "2026-11-10T08:35:00.000Z",
+    "updatedAt": "2026-11-10T16:45:38.943Z"
+  },
+  {
+    "id": "dev_003",
+    "deviceId": "SENSOR_003",
+    "name": "Steam Boiler High-Temp Sensor",
+    "type": "Industrial Pressure & Temp",
+    "location": "Power Unit 3 - Boiler Room",
+    "status": "warning",
+    "ipAddress": "192.168.1.103",
+    "macAddress": "00:1A:2B:3C:4D:03",
+    "firmware": "v3.1.0",
+    "battery": 83,
+    "reportingInterval": 3,
+    "lastReading": {
+      "temperature": 37.1,
+      "humidity": 30.8,
+      "pressure": 1025.4,
+      "battery": 83,
+      "timestamp": "2026-11-10T16:45:38.944Z"
+    },
+    "lastSeen": "2026-11-10T16:45:38.944Z",
+    "telemetryCount": 177,
+    "createdAt": "2026-11-10T08:40:00.000Z",
+    "updatedAt": "2026-11-10T16:45:38.945Z"
+  },
+  {
+    "id": "dev_004",
+    "deviceId": "SENSOR_004",
+    "name": "Cleanroom Environmental Probe",
+    "type": "Precision Microclimate",
+    "location": "Packaging Facility - ISO Class 7",
+    "status": "online",
+    "ipAddress": "192.168.1.104",
+    "macAddress": "00:1A:2B:3C:4D:04",
+    "firmware": "v2.2.0",
+    "battery": 74,
+    "reportingInterval": 5,
+    "lastReading": {
+      "temperature": 20.1,
+      "humidity": 44.2,
+      "pressure": 1016.5,
+      "battery": 74,
+      "timestamp": "2026-11-10T16:45:38.945Z"
+    },
+    "lastSeen": "2026-11-10T16:45:38.945Z",
+    "telemetryCount": 135,
+    "createdAt": "2026-11-10T08:45:00.000Z",
+    "updatedAt": "2026-11-10T16:45:38.945Z"
+  },
+  {
+    "id": "dev_005",
+    "deviceId": "SENSOR_005",
+    "name": "Cold Storage Deep Freezer",
+    "type": "Cryo Logistics Probe",
+    "location": "Warehouse Logistics - Bay 3",
+    "status": "online",
+    "ipAddress": "192.168.1.105",
+    "macAddress": "00:1A:2B:3C:4D:05",
+    "firmware": "v1.9.8",
+    "battery": 65,
+    "reportingInterval": 5,
+    "lastReading": {
+      "temperature": -19.3,
+      "humidity": 55,
+      "pressure": 1011.6,
+      "battery": 65,
+      "timestamp": "2026-11-10T16:45:38.946Z"
+    },
+    "lastSeen": "2026-11-10T16:45:38.946Z",
+    "telemetryCount": 120,
+    "createdAt": "2026-11-10T08:50:00.000Z",
+    "updatedAt": "2026-11-10T16:45:38.946Z"
+  }
+]
