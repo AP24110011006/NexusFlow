@@ -1,0 +1,259 @@
+[
+  {
+    "id": "2583f6f4-1c24-49a4-83ae-c52e047ef6f3",
+    "category": "SYSTEM",
+    "action": "PLATFORM_INIT",
+    "message": "NexusFlow IoT Engine initialized successfully on port 5000",
+    "level": "info",
+    "timestamp": "2026-11-10T15:31:44.667Z"
+  },
+  {
+    "id": "d16c07be-0255-4d25-be4b-3e9c091c2dbd",
+    "category": "DEVICE",
+    "action": "DEVICE_REGISTERED",
+    "message": "Registered new device SENSOR_001 (Assembly Line Climate Probe)",
+    "level": "info",
+    "metadata": {
+      "deviceId": "SENSOR_001",
+      "location": "Factory Floor"
+    },
+    "timestamp": "2026-11-10T15:36:44.667Z"
+  },
+  {
+    "id": "3c23e182-1412-46ba-8373-6f314ba6c7ac",
+    "category": "RULE_ENGINE",
+    "action": "RULE_TRIGGERED",
+    "message": "Rule \"High Temperature Detection\" evaluated to TRUE (41.8°C > 40°C)",
+    "level": "warn",
+    "metadata": {
+      "ruleId": "rule_001",
+      "deviceId": "SENSOR_003",
+      "value": 41.8
+    },
+    "timestamp": "2026-11-10T16:26:44.667Z"
+  },
+  {
+    "id": "bd2a34fc-3d23-476c-b501-c4ec12e76a95",
+    "category": "ALERT",
+    "action": "ALERT_GENERATED",
+    "message": "Generated CRITICAL alert alt_001 for SENSOR_003",
+    "level": "error",
+    "metadata": {
+      "alertId": "alt_001",
+      "severity": "critical"
+    },
+    "timestamp": "2026-11-10T16:26:44.667Z"
+  },
+  {
+    "id": "ed600645-eb7b-4b8d-9884-9784b48f0bc7",
+    "createdAt": "2026-11-10T16:31:47.803Z",
+    "category": "ALERT",
+    "action": "ALERT_TRIGGERED",
+    "message": "[CRITICAL] High temperature alert: 40.9°C exceeds configured threshold 40°C on Steam Boiler High-Temp Sensor (SENSOR_003)",
+    "level": "error",
+    "metadata": {
+      "alertId": "alt_54dbafbd",
+      "ruleId": "rule_001",
+      "deviceId": "SENSOR_003",
+      "value": 40.9
+    }
+  },
+  {
+    "id": "c2a0901d-aeb8-495d-8e2f-16c23ff531d8",
+    "createdAt": "2026-11-10T16:31:47.804Z",
+    "category": "RULE_ENGINE",
+    "action": "RULE_FIRED",
+    "message": "Rule \"High Temperature Detection\" triggered for SENSOR_003: temperature (40.9) > 40",
+    "level": "warn",
+    "metadata": {
+      "ruleId": "rule_001",
+      "ruleName": "High Temperature Detection",
+      "deviceId": "SENSOR_003",
+      "metric": "temperature",
+      "value": 40.9,
+      "threshold": 40,
+      "operator": ">"
+    }
+  },
+  {
+    "id": "d7e08667-20f4-4446-ac54-39b91ca38f02",
+    "createdAt": "2026-11-10T16:32:01.675Z",
+    "category": "SYSTEM",
+    "action": "ANOMALY_INJECTED",
+    "message": "Manual anomaly injected for SENSOR_001: temperature = 47.2",
+    "level": "warn",
+    "metadata": {
+      "targetDeviceId": "SENSOR_001",
+      "targetMetric": "temperature",
+      "targetValue": 47.2
+    }
+  },
+  {
+    "id": "263b4c57-7562-4e85-8730-03fa573f8ce8",
+    "createdAt": "2026-11-10T16:32:01.677Z",
+    "category": "ALERT",
+    "action": "ALERT_TRIGGERED",
+    "message": "[CRITICAL] High temperature alert: 47.2°C exceeds configured threshold 40°C on Assembly Line Climate Probe (SENSOR_001)",
+    "level": "error",
+    "metadata": {
+      "alertId": "alt_882c391a",
+      "ruleId": "rule_001",
+      "deviceId": "SENSOR_001",
+      "value": 47.2
+    }
+  },
+  {
+    "id": "e0518b80-5c6f-4329-9ef9-9729b47bd74b",
+    "createdAt": "2026-11-10T16:32:01.678Z",
+    "category": "RULE_ENGINE",
+    "action": "RULE_FIRED",
+    "message": "Rule \"High Temperature Detection\" triggered for SENSOR_001: temperature (47.2) > 40",
+    "level": "warn",
+    "metadata": {
+      "ruleId": "rule_001",
+      "ruleName": "High Temperature Detection",
+      "deviceId": "SENSOR_001",
+      "metric": "temperature",
+      "value": 47.2,
+      "threshold": 40,
+      "operator": ">"
+    }
+  },
+  {
+    "id": "03fdbc81-3537-4852-91f7-47e9ebc38d83",
+    "createdAt": "2026-11-10T16:44:47.810Z",
+    "category": "ALERT",
+    "action": "ALERT_TRIGGERED",
+    "message": "[CRITICAL] High temperature alert: 40.5°C exceeds configured threshold 40°C on Steam Boiler High-Temp Sensor (SENSOR_003)",
+    "level": "error",
+    "metadata": {
+      "alertId": "alt_f1dfb388",
+      "ruleId": "rule_001",
+      "deviceId": "SENSOR_003",
+      "value": 40.5
+    }
+  },
+  {
+    "id": "b4763334-dfbb-4634-a446-25e05fb4395c",
+    "createdAt": "2026-11-10T16:44:47.812Z",
+    "category": "RULE_ENGINE",
+    "action": "RULE_FIRED",
+    "message": "Rule \"High Temperature Detection\" triggered for SENSOR_003: temperature (40.5) > 40",
+    "level": "warn",
+    "metadata": {
+      "ruleId": "rule_001",
+      "ruleName": "High Temperature Detection",
+      "deviceId": "SENSOR_003",
+      "metric": "temperature",
+      "value": 40.5,
+      "threshold": 40,
+      "operator": ">"
+    }
+  },
+  {
+    "id": "b4dec1b6-62af-48d3-8a8d-169cf511b84c",
+    "createdAt": "2026-11-10T16:45:08.864Z",
+    "category": "ALERT",
+    "action": "ALERT_TRIGGERED",
+    "message": "[CRITICAL] High temperature alert: 40.7°C exceeds configured threshold 40°C on Steam Boiler High-Temp Sensor (SENSOR_003)",
+    "level": "error",
+    "metadata": {
+      "alertId": "alt_e9b2f661",
+      "ruleId": "rule_001",
+      "deviceId": "SENSOR_003",
+      "value": 40.7
+    }
+  },
+  {
+    "id": "13fb517c-0eae-4ff1-8dca-2953a140053a",
+    "createdAt": "2026-11-10T16:45:08.865Z",
+    "category": "RULE_ENGINE",
+    "action": "RULE_FIRED",
+    "message": "Rule \"High Temperature Detection\" triggered for SENSOR_003: temperature (40.7) > 40",
+    "level": "warn",
+    "metadata": {
+      "ruleId": "rule_001",
+      "ruleName": "High Temperature Detection",
+      "deviceId": "SENSOR_003",
+      "metric": "temperature",
+      "value": 40.7,
+      "threshold": 40,
+      "operator": ">"
+    }
+  },
+  {
+    "id": "4486d9bd-714f-4996-b845-10a22b0b842f",
+    "createdAt": "2026-11-10T16:45:23.909Z",
+    "category": "ALERT",
+    "action": "ALERT_TRIGGERED",
+    "message": "[WARNING] Low humidity detected: 29.8% is below safe threshold 30% on Steam Boiler High-Temp Sensor (SENSOR_003)",
+    "level": "warn",
+    "metadata": {
+      "alertId": "alt_cd61e9d2",
+      "ruleId": "rule_002",
+      "deviceId": "SENSOR_003",
+      "value": 29.8
+    }
+  },
+  {
+    "id": "b0048bf3-7f8e-4d9d-b7cd-45fe50c67bcf",
+    "createdAt": "2026-11-10T16:45:23.909Z",
+    "category": "RULE_ENGINE",
+    "action": "RULE_FIRED",
+    "message": "Rule \"Low Humidity Warning\" triggered for SENSOR_003: humidity (29.8) < 30",
+    "level": "warn",
+    "metadata": {
+      "ruleId": "rule_002",
+      "ruleName": "Low Humidity Warning",
+      "deviceId": "SENSOR_003",
+      "metric": "humidity",
+      "value": 29.8,
+      "threshold": 30,
+      "operator": "<"
+    }
+  },
+  {
+    "id": "44f9b272-3bce-4dad-a39a-02b2242955e7",
+    "createdAt": "2026-11-10T16:45:31.189Z",
+    "category": "SYSTEM",
+    "action": "ANOMALY_INJECTED",
+    "message": "Manual anomaly injected for SENSOR_001: temperature = 48.5",
+    "level": "warn",
+    "metadata": {
+      "targetDeviceId": "SENSOR_001",
+      "targetMetric": "temperature",
+      "targetValue": 48.5
+    }
+  },
+  {
+    "id": "5c25f565-83d0-4513-82ec-1d204e1ec71d",
+    "createdAt": "2026-11-10T16:45:31.192Z",
+    "category": "ALERT",
+    "action": "ALERT_TRIGGERED",
+    "message": "[CRITICAL] High temperature alert: 48.5°C exceeds configured threshold 40°C on Assembly Line Climate Probe (SENSOR_001)",
+    "level": "error",
+    "metadata": {
+      "alertId": "alt_12b1e333",
+      "ruleId": "rule_001",
+      "deviceId": "SENSOR_001",
+      "value": 48.5
+    }
+  },
+  {
+    "id": "317f754b-6dcb-4336-8c95-43f62eb8c751",
+    "createdAt": "2026-11-10T16:45:31.193Z",
+    "category": "RULE_ENGINE",
+    "action": "RULE_FIRED",
+    "message": "Rule \"High Temperature Detection\" triggered for SENSOR_001: temperature (48.5) > 40",
+    "level": "warn",
+    "metadata": {
+      "ruleId": "rule_001",
+      "ruleName": "High Temperature Detection",
+      "deviceId": "SENSOR_001",
+      "metric": "temperature",
+      "value": 48.5,
+      "threshold": 40,
+      "operator": ">"
+    }
+  }
+]
