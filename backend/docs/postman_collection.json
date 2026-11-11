@@ -1,0 +1,72 @@
+{
+  "info": {
+    "name": "NexusFlow IoT Telemetry & Rule Engine API",
+    "description": "Week 1 Postman Collection for Ingestion and Management Endpoints. Authored by Koneti Manikanth.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:5000/api/health"
+      }
+    },
+    {
+      "name": "Ingest Telemetry (POST)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"deviceId\": \"SENSOR_001\",\n  \"temperature\": 45.2,\n  \"humidity\": 38.0,\n  \"pressure\": 1013.2,\n  \"battery\": 90\n}"
+        },
+        "url": "http://localhost:5000/api/telemetry"
+      }
+    },
+    {
+      "name": "Get All Devices",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:5000/api/devices"
+      }
+    },
+    {
+      "name": "Get Telemetry History",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:5000/api/telemetry?limit=50"
+      }
+    },
+    {
+      "name": "Test Rule Sandbox",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"rule\": {\n    \"metric\": \"temperature\",\n    \"operator\": \">\",\n    \"threshold\": 40\n  },\n  \"sampleTelemetry\": {\n    \"temperature\": 46.5\n  }\n}"
+        },
+        "url": "http://localhost:5000/api/rules/test"
+      }
+    },
+    {
+      "name": "Trigger Anomaly Spike",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"deviceId\": \"SENSOR_001\",\n  \"metric\": \"temperature\",\n  \"value\": 48.5\n}"
+        },
+        "url": "http://localhost:5000/api/simulator/inject"
+      }
+    }
+  ]
+}
