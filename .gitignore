@@ -5,3 +5,5 @@ dist/
 backend/data/*.backup.json
 .DS_Store
 Thumbs.db
+pr_helper.cjs
+create_prs.cjs
