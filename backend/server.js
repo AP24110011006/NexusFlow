@@ -21,6 +21,7 @@ const analyticsRoutes = require('./routes/analyticsRoutes');
 const logRoutes = require('./routes/logRoutes');
 const settingsRoutes = require('./routes/settingsRoutes');
 const simulatorRoutes = require('./routes/simulatorRoutes');
+const webhookRoutes = require('./routes/webhookRoutes');
 
 const app = express();
 const server = http.createServer(app);
@@ -79,6 +80,7 @@ app.use('/api/analytics', analyticsRoutes);
 app.use('/api/logs', logRoutes);
 app.use('/api/settings', settingsRoutes);
 app.use('/api/simulator', simulatorRoutes);
+app.use('/api/webhooks', webhookRoutes);
 
 // Global Error Handler
 app.use((err, req, res, next) => {
