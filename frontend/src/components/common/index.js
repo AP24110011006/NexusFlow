@@ -2,7 +2,7 @@
  * NexusFlow — Common UI Component Library (Barrel Exports)
  * Author: Likhitha (Frontend Core / UI Lead)
  * Organization: Infotact Solutions
- * Milestone: Week 2 - Component Library Architecture & Module Unification
+ * Milestone: Week 3 - Component Library Architecture & Module Unification
  */
 
 export { default as Badge } from './Badge';
@@ -20,3 +20,5 @@ export { default as Switch } from './Switch';
 export { default as Breadcrumbs } from './Breadcrumbs';
 export { default as Accordion } from './Accordion';
 export { default as EmptyState } from './EmptyState';
+export { default as Drawer } from './Drawer';
+export { default as RadioGroup } from './RadioGroup';
