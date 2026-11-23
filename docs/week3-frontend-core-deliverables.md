@@ -10,7 +10,9 @@
 
 ## 1. Executive Summary
 
-During **Week 3**, the frontend core engineering track delivered contextual **Slide-Over Drawers** and rich **Radio Group Form Selectors**, enabling deep-dive alert escalation inspections and multi-tier policy assignment without losing operator context on background telemetry boards.
+During **Week 3**, the frontend core engineering track delivered contextual **Slide-Over Drawers**, rich **Radio Group Form Selectors**, interactive **Visual Rule Canvas Nodes**, and a 4-step guided **Rule Authoring Stepper**.
+
+These components allow operators to design and inspect multi-stage telemetry automation flows with complete visual clarity.
 
 ---
 
@@ -25,8 +27,16 @@ During **Week 3**, the frontend core engineering track delivered contextual **Sl
 - **Ergonomics:** Card-based selection tiles with custom animated concentric indicators, badges, and helper descriptions.
 - **Accessibility:** Full WAI-ARIA `radiogroup` compliance with keyboard arrow cycling.
 
-### 2.3 UI Pattern Guide (`frontend/docs/week3-drawer-and-slideover-patterns.md`)
-- Comprehensive design specification for side-sheet ergonomics, touchscreen sizing, and dark mode tokens.
+### 2.3 Visual Rule Canvas Node Component (`frontend/src/components/common/RuleCanvasNode.jsx`)
+- **Node Topology:** Modular cards representing Trigger, Condition, and Action nodes with connection ports (`in`, `out`).
+- **Visual Feedback:** Status indicators (active pulse, warning, idle) and selection rings for visual workflow editors.
+
+### 2.4 Multi-Step Wizard Stepper (`frontend/src/components/common/Stepper.jsx`)
+- **Guided Workflows:** 4-stage step navigator with checkmarks, active glowing states, and responsive label scaling.
+
+### 2.5 Architectural Documentation
+- [`frontend/docs/week3-drawer-and-slideover-patterns.md`](file:///c:/NexusFlow/frontend/docs/week3-drawer-and-slideover-patterns.md) — Slide-over UX guide
+- [`frontend/docs/week3-visual-rule-builder-specs.md`](file:///c:/NexusFlow/frontend/docs/week3-visual-rule-builder-specs.md) — Visual flow builder specifications
 
 ---
 
@@ -38,4 +48,4 @@ During **Week 3**, the frontend core engineering track delivered contextual **Sl
 **Likhitha**  
 Frontend Core Lead / Web Development Intern  
 Infotact Solutions  
-Date: 22 November 2026
+Date: 23 November 2026
