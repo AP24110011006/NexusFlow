@@ -22,3 +22,5 @@ export { default as Accordion } from './Accordion';
 export { default as EmptyState } from './EmptyState';
 export { default as Drawer } from './Drawer';
 export { default as RadioGroup } from './RadioGroup';
+export { default as RuleCanvasNode } from './RuleCanvasNode';
+export { default as Stepper } from './Stepper';
