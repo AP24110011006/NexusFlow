@@ -15,3 +15,4 @@ export { default as TelemetrySmoothingWidget } from './TelemetrySmoothingWidget'
 export { default as SensorVolatilitySparkline } from './SensorVolatilitySparkline';
 export { default as IncidentResponseScorecard } from './IncidentResponseScorecard';
 export { default as VibrationSpectrogramWidget } from './VibrationSpectrogramWidget';
+export { default as EnergySustainabilityWidget } from './EnergySustainabilityWidget';
