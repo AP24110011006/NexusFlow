@@ -13,3 +13,4 @@ export * from './telemetryMath';
 export * from './formatters';
 export * from './incidentMetricsMath';
 export * from './spectralMath';
+export * from './energyAnalyticsMath';
