@@ -24,3 +24,5 @@ export { default as Drawer } from './Drawer';
 export { default as RadioGroup } from './RadioGroup';
 export { default as RuleCanvasNode } from './RuleCanvasNode';
 export { default as Stepper } from './Stepper';
+export { default as Timeline } from './Timeline';
+export { default as FlowConnector } from './FlowConnector';
