@@ -2,8 +2,8 @@
 **Client / Organization:** Infotact Solutions (Electronic City, Bengaluru, Karnataka, PIN 560100)  
 **Project:** NexusFlow: Visual IoT Telemetry & Rule Engine  
 **Internship Reference:** ITS/WEB/1849 (Koneti Manikanth)  
-**Milestone:** Week 3 — Incident Escalation, Visual Flow Builders, RBAC, Audit Logging & Energy Analytics  
-**Review Date:** 28 November 2026  
+**Milestone:** Week 3 — Incident Escalation, Visual Flow Builders, RBAC, Audit Logging, DLQ & Predictive Maintenance  
+**Review Date:** 25 November 2026  
 **Supervisor / HR:** Ms. Jyotirmayee Behera (HR Manager)
 
 ---
@@ -22,7 +22,9 @@
 │ • RBAC Authorization Svc│ • Visual Rule Canvas Node   │ • SLA Scorecard Widget         │
 │ • Permission Middleware │ • Stepper Wizard Navigation │ • Vibration Harmonics Math     │
 │ • Tamper-Evident Audit  │ • Audit Timeline Component  │ • Spectrogram Widget (ISO)     │
-│ • 50 Automated Tests    │ • SVG FlowConnector System  │ • Energy Sustainability Widget │
+│ • Dead Letter Queue     │ • SVG FlowConnector System  │ • Energy Sustainability Widget │
+│ • 56 Automated Tests    │ • ColorPicker Swatches      │ • Predictive RUL Math          │
+│ • Jitter Exponential    │ • FilterChipBar Multi-Tag   │ • PredictiveMaintenance Widget │
 └─────────────────────────┴─────────────────────────────┴────────────────────────────────┘
 ```
 
@@ -34,8 +36,9 @@
 - [x] Engineered `backend/services/escalationService.js` supporting multi-tier SLA escalation chains.
 - [x] Engineered `backend/services/rbacService.js` providing enterprise role-based authorization (`admin`, `operator`, `auditor`, `viewer`).
 - [x] Engineered `backend/services/auditService.js` providing SHA-256 cryptographic chaining for tamper-evident compliance logs.
-- [x] Created 18 new automated backend unit tests (6 escalation + 6 RBAC + 6 audit), bringing total coverage to **50 / 50 tests passing (100%)**.
-- [x] Authored Alert Escalation Architecture, RBAC Security Matrix & Audit Compliance documentation.
+- [x] Engineered `backend/services/dlqService.js` with exponential backoff, decorrelated jitter, and poison pill isolation.
+- [x] Created 24 new automated backend unit tests (6 escalation + 6 RBAC + 6 audit + 6 DLQ), bringing total coverage to **56 / 56 tests passing (100%)**.
+- [x] Authored Alert Escalation Architecture, RBAC Security Matrix, Audit Compliance & DLQ Fault Tolerance documentation.
 - [x] Authored Week 3 Backend Deliverables Comprehensive Report (`docs/week3-backend-deliverables.md`).
 
 ### 2.2 Frontend Core Lead — Likhitha (`likhitha` branch)
@@ -45,8 +48,10 @@
 - [x] Engineered multi-step wizard `frontend/src/components/common/Stepper.jsx` for guided rule authoring.
 - [x] Engineered chronological `frontend/src/components/common/Timeline.jsx` for audit log event rendering.
 - [x] Engineered dynamic SVG-based `frontend/src/components/common/FlowConnector.jsx` with bezier curves.
+- [x] Engineered `frontend/src/components/common/ColorPicker.jsx` with 8 industrial theme presets and custom hex support.
+- [x] Engineered `frontend/src/components/common/FilterChipBar.jsx` supporting active chips, count badges, and bulk dismiss.
 - [x] Updated common UI component barrel exports (`frontend/src/components/common/index.js`).
-- [x] Authored Drawer UX patterns guide, Visual Rule Builder specifications & Timeline design specs.
+- [x] Authored Drawer UX patterns guide, Visual Rule Builder specifications, Timeline design specs & Theming/Tagging guide.
 - [x] Authored Week 3 Frontend Core Report (`docs/week3-frontend-core-deliverables.md`).
 
 ### 2.3 Frontend Analytics Lead — Harshitha (`harshitha` branch)
@@ -56,8 +61,10 @@
 - [x] Built interactive `frontend/src/components/widgets/VibrationSpectrogramWidget.jsx` with machine class selection.
 - [x] Formulated AC active/reactive/apparent power and CEA carbon footprint models in `frontend/src/utils/energyAnalyticsMath.js`.
 - [x] Built interactive `frontend/src/components/widgets/EnergySustainabilityWidget.jsx` with tariff switching and carbon offset tracker.
+- [x] Formulated Remaining Useful Life (RUL) linear degradation regression and Weibull cumulative hazard in `frontend/src/utils/predictiveRulMath.js`.
+- [x] Built interactive `frontend/src/components/widgets/PredictiveMaintenanceWidget.jsx` with health index bar and prescriptive actions.
 - [x] Updated analytics and utility barrel exports (`frontend/src/components/widgets/index.js`, `frontend/src/utils/index.js`).
-- [x] Authored Incident Response SLA Methodology, Vibration Harmonics & Energy Sustainability whitepapers.
+- [x] Authored Incident Response SLA Methodology, Vibration Harmonics, Energy Sustainability & Predictive Maintenance whitepapers.
 - [x] Authored Week 3 Team Collaboration Checklist & Internship Timesheet Log (`docs/week3-internship-timesheet-log.md`).
 
 ---
@@ -75,12 +82,15 @@
 | **#40** | `manikanth` | Manikanth (Backend Lead) | SHA-256 tamper-evident audit logging service, integrity verification, 6 unit tests & compliance doc | **MERGED** |
 | **#41** | `likhitha` | Likhitha (Frontend Core) | Timeline audit component, SVG FlowConnector line system, timeline UI specs & deliverables update | **MERGED** |
 | **#42** | `harshitha` | Harshitha (Analytics) | AC power & CEA carbon footprint math, EnergySustainabilityWidget, energy methodology & timesheet | **MERGED** |
+| **#43** | `manikanth` | Manikanth (Backend Lead) | Dead Letter Queue (DLQ) service, jitter exponential backoff, 6 unit tests & fault-tolerance doc | **MERGED** |
+| **#44** | `likhitha` | Likhitha (Frontend Core) | ColorPicker theme palette, FilterChipBar multi-tag taxonomy, theming guide & core report update | **MERGED** |
+| **#45** | `harshitha` | Harshitha (Analytics) | Predictive RUL math, Weibull hazard, PredictiveMaintenanceWidget, PdM methodology & checklist | **MERGED** |
 
 ---
 
 ## 4. Quality Assurance Summary
 
-- **Automated Backend Tests:** **50 / 50 Passed (100% Success Rate)** across all 9 test suites.
+- **Automated Backend Tests:** **56 / 56 Passed (100% Success Rate)** across all 10 test suites.
 - **Frontend Build Status:** Vite v5.4.21 production bundling passes cleanly with **0 errors and 0 warnings**.
 - **Sign-off Status:** **Week 3 Milestones Fully Completed & Verified for Evaluation**.
 
