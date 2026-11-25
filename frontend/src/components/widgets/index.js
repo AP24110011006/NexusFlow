@@ -16,3 +16,4 @@ export { default as SensorVolatilitySparkline } from './SensorVolatilitySparklin
 export { default as IncidentResponseScorecard } from './IncidentResponseScorecard';
 export { default as VibrationSpectrogramWidget } from './VibrationSpectrogramWidget';
 export { default as EnergySustainabilityWidget } from './EnergySustainabilityWidget';
+export { default as PredictiveMaintenanceWidget } from './PredictiveMaintenanceWidget';
