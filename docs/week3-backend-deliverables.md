@@ -38,6 +38,13 @@ The backend architecture now provides enterprise-grade compliance and operationa
 - **Unit Tests:** 6/6 tests passing in `backend/tests/auditService.test.js`.
 - **Documentation:** [`backend/docs/week3-audit-logging-and-compliance-architecture.md`](file:///c:/NexusFlow/backend/docs/week3-audit-logging-and-compliance-architecture.md).
 
+### 2.4 Dead Letter Queue (DLQ) & Fault Tolerance (`backend/services/dlqService.js`)
+- **Failure Resiliency:** In-memory queue with automatic poison pill quarantine for messages exceeding retry threshold.
+- **Decorrelated Jitter Backoff:** Exponential backoff with additive random jitter to eliminate retry storms.
+- **Replay Mechanism:** On-demand asynchronous message replay (`replayMessage`) and FIFO capacity eviction protection.
+- **Unit Tests:** 6/6 tests passing in `backend/tests/dlqService.test.js`.
+- **Documentation:** [`backend/docs/week3-dead-letter-queue-and-fault-tolerance-architecture.md`](file:///c:/NexusFlow/backend/docs/week3-dead-letter-queue-and-fault-tolerance-architecture.md).
+
 ---
 
 ## 3. Comprehensive Test Verification Matrix (Week 3 Status)
@@ -53,8 +60,9 @@ The backend architecture now provides enterprise-grade compliance and operationa
 | **Escalation Service** | `backend/tests/escalationService.test.js` | 6 | 6 | 100% | Multi-tier progression, timer bounds, ack suppression, resolution stats |
 | **RBAC Permission Engine** | `backend/tests/rbacService.test.js` | 6 | 6 | 100% | Wildcard access, operator/auditor separation, viewer lockdown, 403 checks |
 | **Cryptographic Audit** | `backend/tests/auditService.test.js` | 6 | 6 | 100% | Genesis block, SHA-256 block hash, tamper detection, prevHash link |
+| **Dead Letter Queue (DLQ)** | `backend/tests/dlqService.test.js` | 6 | 6 | 100% | Exponential jitter backoff, replay handler, poison quarantine, FIFO eviction |
 | **System Diagnostics** | `backend/scripts/health-check.js` | 8 | 8 | 100% | Node runtime environment, memory RSS, 7 database JSON file structures |
-| **Total Automated Tests** | — | **50** | **50** | **100%** | **Full Backend Pipeline Verified** |
+| **Total Automated Tests** | — | **56** | **56** | **100%** | **Full Backend Pipeline Verified** |
 
 ---
 
@@ -64,4 +72,4 @@ The backend architecture now provides enterprise-grade compliance and operationa
 **Koneti Manikanth**  
 Backend Lead / Web Development Intern (Ref: `ITS/WEB/1849`)  
 Infotact Solutions  
-Date: 24 November 2026
+Date: 25 November 2026
