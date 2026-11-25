@@ -35,10 +35,17 @@ During **Week 3**, the frontend core engineering track delivered an extensive ex
 ### 2.6 Cubic Bezier Flow Connector (`frontend/src/components/common/FlowConnector.jsx`)
 - Hardware-accelerated SVG cubic Bezier paths connecting node flow ports with active glow and animated dash styling.
 
-### 2.7 Architectural Documentation
+### 2.7 Color Theme Picker (`frontend/src/components/common/ColorPicker.jsx`)
+- Interactive popover palette with 8 industrial preset swatches, custom hex input, and WCAG contrast awareness.
+
+### 2.8 Multi-Tag Filter Chip Bar (`frontend/src/components/common/FilterChipBar.jsx`)
+- Keyboard-accessible tag taxonomy filter bar with active states, count badges, and bulk dismiss capabilities.
+
+### 2.9 Architectural Documentation
 - [`frontend/docs/week3-drawer-and-slideover-patterns.md`](file:///c:/NexusFlow/frontend/docs/week3-drawer-and-slideover-patterns.md) — Slide-over UX guide
 - [`frontend/docs/week3-visual-rule-builder-specs.md`](file:///c:/NexusFlow/frontend/docs/week3-visual-rule-builder-specs.md) — Visual flow builder specifications
 - [`frontend/docs/week3-timeline-and-audit-ui-patterns.md`](file:///c:/NexusFlow/frontend/docs/week3-timeline-and-audit-ui-patterns.md) — Timeline & connector math guide
+- [`frontend/docs/week3-visual-theming-and-tag-filtering-patterns.md`](file:///c:/NexusFlow/frontend/docs/week3-visual-theming-and-tag-filtering-patterns.md) — Theming & taxonomy UX patterns
 
 ---
 
@@ -50,4 +57,4 @@ During **Week 3**, the frontend core engineering track delivered an extensive ex
 **Likhitha**  
 Frontend Core Lead / Web Development Intern  
 Infotact Solutions  
-Date: 24 November 2026
+Date: 25 November 2026
