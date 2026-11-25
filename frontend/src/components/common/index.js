@@ -26,3 +26,5 @@ export { default as RuleCanvasNode } from './RuleCanvasNode';
 export { default as Stepper } from './Stepper';
 export { default as Timeline } from './Timeline';
 export { default as FlowConnector } from './FlowConnector';
+export { default as ColorPicker } from './ColorPicker';
+export { default as FilterChipBar } from './FilterChipBar';
