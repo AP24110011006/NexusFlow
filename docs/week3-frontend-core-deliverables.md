@@ -41,11 +41,18 @@ During **Week 3**, the frontend core engineering track delivered an extensive ex
 ### 2.8 Multi-Tag Filter Chip Bar (`frontend/src/components/common/FilterChipBar.jsx`)
 - Keyboard-accessible tag taxonomy filter bar with active states, count badges, and bulk dismiss capabilities.
 
-### 2.9 Architectural Documentation
+### 2.9 Key-Value Pair Metadata Editor (`frontend/src/components/common/KeyValueEditor.jsx`)
+- Dynamic dictionary table editor for custom HTTP headers, MQTT topic keys, and sensor offset maps.
+
+### 2.10 Tactile Segmented Control (`frontend/src/components/common/SegmentedControl.jsx`)
+- Sliding pill view switcher with WAI-ARIA radio group semantics and arrow-key navigation.
+
+### 2.11 Architectural Documentation
 - [`frontend/docs/week3-drawer-and-slideover-patterns.md`](file:///c:/NexusFlow/frontend/docs/week3-drawer-and-slideover-patterns.md) — Slide-over UX guide
 - [`frontend/docs/week3-visual-rule-builder-specs.md`](file:///c:/NexusFlow/frontend/docs/week3-visual-rule-builder-specs.md) — Visual flow builder specifications
 - [`frontend/docs/week3-timeline-and-audit-ui-patterns.md`](file:///c:/NexusFlow/frontend/docs/week3-timeline-and-audit-ui-patterns.md) — Timeline & connector math guide
 - [`frontend/docs/week3-visual-theming-and-tag-filtering-patterns.md`](file:///c:/NexusFlow/frontend/docs/week3-visual-theming-and-tag-filtering-patterns.md) — Theming & taxonomy UX patterns
+- [`frontend/docs/week3-metadata-editors-and-segmented-navigation.md`](file:///c:/NexusFlow/frontend/docs/week3-metadata-editors-and-segmented-navigation.md) — Metadata & segmented control guide
 
 ---
 
@@ -57,4 +64,4 @@ During **Week 3**, the frontend core engineering track delivered an extensive ex
 **Likhitha**  
 Frontend Core Lead / Web Development Intern  
 Infotact Solutions  
-Date: 25 November 2026
+Date: 27 November 2026

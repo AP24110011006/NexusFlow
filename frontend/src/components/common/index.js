@@ -28,3 +28,5 @@ export { default as Timeline } from './Timeline';
 export { default as FlowConnector } from './FlowConnector';
 export { default as ColorPicker } from './ColorPicker';
 export { default as FilterChipBar } from './FilterChipBar';
+export { default as KeyValueEditor } from './KeyValueEditor';
+export { default as SegmentedControl } from './SegmentedControl';
