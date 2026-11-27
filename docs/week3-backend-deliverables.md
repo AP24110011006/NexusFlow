@@ -45,6 +45,13 @@ The backend architecture now provides enterprise-grade compliance and operationa
 - **Unit Tests:** 6/6 tests passing in `backend/tests/dlqService.test.js`.
 - **Documentation:** [`backend/docs/week3-dead-letter-queue-and-fault-tolerance-architecture.md`](file:///c:/NexusFlow/backend/docs/week3-dead-letter-queue-and-fault-tolerance-architecture.md).
 
+### 2.5 Alert Silencing & Maintenance Window Service (`backend/services/silenceService.js`)
+- **Alert Fatigue Prevention:** Declarative silence rules suppressing notifications during planned calibrations or maintenance windows.
+- **Pattern Matchers:** Evaluates exact tuples, wildcards (`*`), and regex patterns (`/^BLOWER-[0-9]+$/`) against incoming alerts.
+- **Lifecycle & Governance:** Automatic time-based expiration, operator cancellation, and SOC 2 audit tracking (`suppressedCount`).
+- **Unit Tests:** 6/6 tests passing in `backend/tests/silenceService.test.js`.
+- **Documentation:** [`backend/docs/week3-alert-silencing-and-maintenance-windows.md`](file:///c:/NexusFlow/backend/docs/week3-alert-silencing-and-maintenance-windows.md).
+
 ---
 
 ## 3. Comprehensive Test Verification Matrix (Week 3 Status)
@@ -61,8 +68,9 @@ The backend architecture now provides enterprise-grade compliance and operationa
 | **RBAC Permission Engine** | `backend/tests/rbacService.test.js` | 6 | 6 | 100% | Wildcard access, operator/auditor separation, viewer lockdown, 403 checks |
 | **Cryptographic Audit** | `backend/tests/auditService.test.js` | 6 | 6 | 100% | Genesis block, SHA-256 block hash, tamper detection, prevHash link |
 | **Dead Letter Queue (DLQ)** | `backend/tests/dlqService.test.js` | 6 | 6 | 100% | Exponential jitter backoff, replay handler, poison quarantine, FIFO eviction |
+| **Alert Silencing Engine** | `backend/tests/silenceService.test.js` | 6 | 6 | 100% | Active time windows, regex matchers, wildcard match, manual cancel, metrics |
 | **System Diagnostics** | `backend/scripts/health-check.js` | 8 | 8 | 100% | Node runtime environment, memory RSS, 7 database JSON file structures |
-| **Total Automated Tests** | — | **56** | **56** | **100%** | **Full Backend Pipeline Verified** |
+| **Total Automated Tests** | — | **62** | **62** | **100%** | **Full Backend Pipeline Verified** |
 
 ---
 
@@ -72,4 +80,4 @@ The backend architecture now provides enterprise-grade compliance and operationa
 **Koneti Manikanth**  
 Backend Lead / Web Development Intern (Ref: `ITS/WEB/1849`)  
 Infotact Solutions  
-Date: 25 November 2026
+Date: 27 November 2026
