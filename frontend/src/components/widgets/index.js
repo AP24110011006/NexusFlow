@@ -17,3 +17,4 @@ export { default as IncidentResponseScorecard } from './IncidentResponseScorecar
 export { default as VibrationSpectrogramWidget } from './VibrationSpectrogramWidget';
 export { default as EnergySustainabilityWidget } from './EnergySustainabilityWidget';
 export { default as PredictiveMaintenanceWidget } from './PredictiveMaintenanceWidget';
+export { default as SensorFusionWidget } from './SensorFusionWidget';

@@ -15,3 +15,4 @@ export * from './incidentMetricsMath';
 export * from './spectralMath';
 export * from './energyAnalyticsMath';
 export * from './predictiveRulMath';
+export * from './sensorFusionMath';
